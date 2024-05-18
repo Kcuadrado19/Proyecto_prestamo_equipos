@@ -9,7 +9,7 @@ public class Main{
         
         
         String op= mn.opcionesprincipales();
-        me.swiches_est(op);
+        me.switches_est(op);
         
     }
 
