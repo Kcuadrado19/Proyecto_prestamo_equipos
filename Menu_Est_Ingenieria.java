@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Menu_opciones {
+public class Menu_Est_Ingenieria {
 
     String opcionSeleccionada="";
     public String opcionesprincipales() {
@@ -11,7 +11,7 @@ public class Menu_opciones {
         UIManager.put("Panel.background", Color.LIGHT_GRAY);
 
         // Opciones que se mostrarán en el JComboBox
-        String[] opciones = {"Estudiante de Ingeniería", "Estudiante de Diseño", "Mostrar Inventario Total","Salir"};
+        String[] opciones = {"Registrar préstamo de equipo", "Modificar préstamo de equipo", "Devolución de equipo","Buscar equipo", "Volver al menú principal"};
 
         // Mensaje que se mostrará en el cuadro de diálogo
         JComboBox<String> comboBox = new JComboBox<>(opciones);
