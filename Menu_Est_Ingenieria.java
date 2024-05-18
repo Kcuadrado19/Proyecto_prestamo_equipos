@@ -4,7 +4,7 @@ import java.awt.*;
 public class Menu_Est_Ingenieria {
 
     String opcionSeleccionada="";
-    public String opcionesprincipales() {
+    public String opciones_est_ingenieria() {
 
         // Cambiar el color de fondo del cuadro de diálogo
         UIManager.put("OptionPane.background", Color.lightGray);

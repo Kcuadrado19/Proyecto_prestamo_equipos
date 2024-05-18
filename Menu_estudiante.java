@@ -2,15 +2,17 @@ public class Menu_estudiante {
 
     public String switches_est(String op){
 
+    
         switch(op)  {
 
             case "Estudiante de Ingeniería":
-
-
+            Menu_Est_Ingenieria mi = new Menu_Est_Ingenieria();
+            String opc= mi.opciones_est_ingenieria();
             break;
 
             case "Estudiante de Diseño":
-
+            Menu_est_diseno md = new Menu_est_diseno();
+            String op1= md.opciones_est_diseno();
             break;
         
             case "Mostrar Inventario Total":
