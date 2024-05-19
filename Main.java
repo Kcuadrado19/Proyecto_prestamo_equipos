@@ -7,7 +7,6 @@ public class Main{
         Menu_opciones mn =new Menu_opciones();
         Menu_estudiante me = new Menu_estudiante();
         
-        
         String op= mn.opcionesprincipales();
         me.switches_est(op);
         

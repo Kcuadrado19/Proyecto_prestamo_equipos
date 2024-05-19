@@ -1,4 +1,3 @@
-
 public class Obj_Estudiante_Ingenieria {
     private String cedula;
     private String nombre;
