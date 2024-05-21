@@ -1,8 +1,8 @@
-public class Submenu_Est_Ingenieria {
+public class Submenu_Est_diseno {
 
-    public String switches_est_Ingenieria(String opc){
+    public String switches_est_diseno(String op1){
     
-        switch(opc)  {
+        switch(op1)  {
 
             case "Registrar préstamo de equipo":
                 System.out.println("Registrar datos de prestamo");
