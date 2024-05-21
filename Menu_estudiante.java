@@ -14,6 +14,8 @@ public class Menu_estudiante {
             case "Estudiante de Diseño":
                 Menu_est_diseno md = new Menu_est_diseno();
                 String op1= md.opciones_est_diseno();
+                Submenu_Est_diseno sd = new Submenu_Est_diseno();
+                sd.switches_est_diseno(op1);
                 break;
         
             case "Mostrar Inventario Total":
