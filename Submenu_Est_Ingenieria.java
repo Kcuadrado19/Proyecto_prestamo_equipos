@@ -1,14 +1,33 @@
+import javax.swing.JOptionPane;
+
 public class Submenu_Est_Ingenieria {
 
     public String switches_est_Ingenieria(String opc){
     
         switch(opc)  {
-
             case "Registrar préstamo de equipo":
-                System.out.println("Registrar datos de prestamo");
+                boolean continuar = true;
+                    
+                while (continuar) {
+                    String[] opciones = {"Ingresar datos", "Salir"};
+                    int opcionSeleccionada = JOptionPane.showOptionDialog(null, "Seleccione una opción:",
+                            "Menú", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+                            null, opciones, opciones[0]);
+                    
+                    switch (opcionSeleccionada) {
+                        case 0:
+                            Registrar_Est_Ingenieria ri = new Registrar_Est_Ingenieria();
+                            ri.ingresarDatos();
+                            break;
+                        case 1:
+                            continuar = false;
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(null, "Opción no válida");
+                            break; }
+                }
                 Salir s=new Salir();
                 s.Menu_Salir();
-
                 break;
 
             case "Modificar préstamo de equipo":
@@ -28,10 +47,7 @@ public class Submenu_Est_Ingenieria {
             default:
 
                 break;
-
         }
         return null;
-
     }
-    
 }
