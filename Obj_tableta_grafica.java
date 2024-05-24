@@ -1,22 +1,21 @@
 public class Obj_tableta_grafica {
     private String serial;
     private String marca;
-    private float tamaño;
+    private float tamano;
     private float precio;
-    private int almacenamiento;
+    private String almacenamiento;
     private float peso;
 
     //Constructor
-    public Obj_tableta_grafica(String serial, String marca, float tamaño, float precio, int almacenamiento, float peso) {
+    public Obj_tableta_grafica(String serial, String marca, float tamano, float precio, String almacenamiento, float peso) {
         this.serial = serial;
         this.marca = marca;
-        this.tamaño = tamaño;
+        this.tamano = tamano;
         this.precio = precio;
         this.almacenamiento = almacenamiento;
         this.peso = peso;
     }
 
-    //Getter y setter
     public String getSerial() {
         return serial;
     }
@@ -33,12 +32,12 @@ public class Obj_tableta_grafica {
         this.marca = marca;
     }
 
-    public float getTamaño() {
-        return tamaño;
+    public float getTamano() {
+        return tamano;
     }
 
-    public void setTamaño(float tamaño) {
-        this.tamaño = tamaño;
+    public void setTamano(float tamano) {
+        this.tamano = tamano;
     }
 
     public float getPrecio() {
@@ -49,11 +48,11 @@ public class Obj_tableta_grafica {
         this.precio = precio;
     }
 
-    public int getAlmacenamiento() {
+    public String getAlmacenamiento() {
         return almacenamiento;
     }
 
-    public void setAlmacenamiento(int almacenamiento) {
+    public void setAlmacenamiento(String almacenamiento) {
         this.almacenamiento = almacenamiento;
     }
 
@@ -64,5 +63,8 @@ public class Obj_tableta_grafica {
     public void setPeso(float peso) {
         this.peso = peso;
     }
+
+    //Getter y setter
+    
     
 }
