@@ -5,17 +5,16 @@ public class Obj_Estudiante_Ingenieria {
     private String telefono;
     private int semestreActual;
     private double promedioAcumulado;
-    private String serial;
+    //private String serial;
 
     // Constructor
-    public Obj_Estudiante_Ingenieria (String cedula, String nombre, String apellido, String telefono, int semestreActual, double promedioAcumulado, String serial) {
+    public Obj_Estudiante_Ingenieria (String cedula, String nombre, String apellido, String telefono, int semestreActual, double promedioAcumulado) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.semestreActual = semestreActual;
-        this.promedioAcumulado = promedioAcumulado;
-        this.serial = serial;
+        
     }
 
     //Metodos Getter and Setter
@@ -67,12 +66,5 @@ public class Obj_Estudiante_Ingenieria {
         this.promedioAcumulado = promedioAcumulado;
     }
 
-    public String getSerial() {
-        return serial;
-    }
-
-    public void setSerial(String serial) {
-        this.serial = serial;
-    }
-
+    
 }
