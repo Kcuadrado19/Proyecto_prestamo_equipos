@@ -3,10 +3,11 @@ import javax.swing.JOptionPane;
 public class Registrar_Est_Ingenieria {
 
 
-    public static void ingresarDatos() {
-        String nombre, apellido, cedula, telefono, semestreStr, promedioStr, serial;
+    public void ingresarDatos() {
+        String nombre, apellido, cedula, telefono, semestreStr, promedioStr, serial, marca, tamanostr, preciostr;
         int semestre = 0;
-        float promedio = 0.0f;
+        float promedio = 0.0f, tamano = 0.0f, precio=0.0f;
+            
         
         do {
             nombre = JOptionPane.showInputDialog("Ingrese su nombre:");
@@ -64,7 +65,7 @@ public class Registrar_Est_Ingenieria {
             }
         } while (!promedioStr.matches("\\d*\\.?\\d+") || promedio > 5 || promedioStr.isEmpty());
         
-        promedio = Float.parseFloat(promedioStr);
+        
         
         do {
             serial = JOptionPane.showInputDialog("Ingrese el serial:");
@@ -72,8 +73,36 @@ public class Registrar_Est_Ingenieria {
                 JOptionPane.showMessageDialog(null, "El serial solo puede contener letras y números.");
             }
         } while (!serial.matches("[a-zA-Z0-9]+"));
+
+        do {
+            marca = JOptionPane.showInputDialog("Ingrese su marca:");
+            if (!marca.matches("[a-zA-Z]+")) {
+                JOptionPane.showMessageDialog(null, "La marca solo puede contener letras.");
+            }
+        } while (!marca.matches("[a-zA-Z]+"));
+
+        do {
+            tamanostr = JOptionPane.showInputDialog("Ingrese el tamaño del equipo en pulgadas:");
+            if (!tamanostr.matches("\\d*\\.?\\d+")) {
+                JOptionPane.showMessageDialog(null, "El tamaño debe ser un número válido.");
+            }
+        } while (!tamanostr.matches("\\d*\\.?\\d+")|| tamanostr.isEmpty());
+             tamano = Float.parseFloat(tamanostr);
+
+        do {
+            preciostr = JOptionPane.showInputDialog("Ingrese el precio del equipo en pulgadas:");
+            if (!preciostr.matches("\\d*\\.?\\d+")) {
+                JOptionPane.showMessageDialog(null, "El tamaño debe ser un número válido.");
+            }
+        } while (!preciostr.matches("\\d*\\.?\\d+")|| preciostr.isEmpty());
+             precio = Float.parseFloat(preciostr);    
+    
         
-        // Puedes hacer lo que quieras con los datos ingresados
+
+        Obj_Estudiante_Ingenieria eti = new Obj_Estudiante_Ingenieria(cedula,nombre,apellido,telefono,semestre,promedio,serial);
+        Data dt= new Data();
+        dt.datos(eti);
+        
         JOptionPane.showMessageDialog(null, "Datos ingresados:\nNombre: " + nombre +
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nSemestre actualmente cursado: " + semestre + "\nPromedio acumulado: " + promedio +

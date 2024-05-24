@@ -73,7 +73,7 @@ public class Registrar_Est_diseno {
             }
         } while (!serial.matches("[a-zA-Z0-9]+"));
         
-        // Puedes hacer lo que quieras con los datos ingresados
+       
         JOptionPane.showMessageDialog(null, "Datos ingresados:\nNombre: " + nombre +
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nSemestre actualmente cursado: " + semestre + "\nPromedio acumulado: " + promedio +
