@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Import_Est_Ingenieria {
 
-    public void Import_Ingenieria() {
+    public void Import_Ingenieria(String opc) {
 
         LinkedList<Obj_Import_Ing> import_ing = new LinkedList<>();
         File file = new File("C:/Users/Jesus Suarez/OneDrive - onbusinessconsulting.com/Documentos/Java/Estructura/Prueba Import/DB_Estudiante_Ingenieria.txt"); // Cambia la ruta al archivo
@@ -32,6 +32,9 @@ public class Import_Est_Ingenieria {
             System.out.println("Error: Archivo no encontrado.");
             e.printStackTrace();
         }
+
+        Submenu_Est_Ingenieria sei = new Submenu_Est_Ingenieria();
+        sei.switches_est_Ingenieria(opc);
 
     }
 }

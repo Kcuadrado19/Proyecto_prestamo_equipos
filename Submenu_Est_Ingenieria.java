@@ -34,7 +34,8 @@ public class Submenu_Est_Ingenieria {
                 break;
 
             case "Modificar préstamo de equipo":
-                System.out.println("Modificar datos de prestamo");
+                Data dt= new Data();
+                dt.buscar();
                 break;
         
             case "Devolución de equipo":
