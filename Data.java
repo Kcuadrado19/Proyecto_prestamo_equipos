@@ -9,12 +9,22 @@ public class Data {
     public Obj_Import_Ing datos_import(Obj_Import_Ing oii){
 
         listaCombinadaInge.add(oii);
+
+        for (Obj_Import_Ing persona : listaCombinadaInge) {
+            System.out.println(persona.getCedula()+" "+persona.getNombre()+" "+persona.getApellido());
+        }
+        
         return null;
     }
 
     public Obj_Import_dis datos_import_dis(Obj_Import_dis oid){
 
         listaCombinadaDis.add(oid);
+
+        for (Obj_Import_dis persona : listaCombinadaDis) {
+            System.out.println(persona.getCedula()+" "+persona.getNombre()+" "+persona.getApellido());
+        }
+
         return null;
     }
 
