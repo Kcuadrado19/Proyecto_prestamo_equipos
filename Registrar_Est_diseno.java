@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class Registrar_Est_diseno {
 
 
-    public static void ingresarDatos() {
+    public void ingresarDatos() {
         String nombre, apellido, cedula, telefono, cantidadStr, promedioStr, serial;
         int semestre = 0;
         float promedio = 0.0f, cantidad= 0.0f;
