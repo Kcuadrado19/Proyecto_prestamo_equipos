@@ -2,7 +2,6 @@ import javax.swing.JOptionPane;
 
 public class Registrar_Est_diseno {
 
-
     public void ingresarDatos() {
         String nombre, apellido, cedula, telefono, modalidad, cantidadStr,marca,tamanostr, serial,almacenamiento, preciostr,pesostr;
         int cantidadasig = 0;
@@ -40,8 +39,6 @@ public class Registrar_Est_diseno {
             }
         } while (!telefono.matches("[0-9]+") || telefono.length() > 10 || telefono.isEmpty());
 
-
-
              int opcionModalidadEst;
              boolean opcionValidaModalidad;
         do {
@@ -62,8 +59,6 @@ public class Registrar_Est_diseno {
                      JOptionPane.showMessageDialog(null, "Elija una de las opciones disponibles.");
                  }
         } while (!opcionValidaModalidad);
-
-
         
         do {
             cantidadStr = JOptionPane.showInputDialog("Ingrese el número de asignaturas actualmente cursadas:");
@@ -76,8 +71,6 @@ public class Registrar_Est_diseno {
                 }
             }
         } while (!cantidadStr.matches("[0-9]+") || cantidadasig > 10 || cantidadStr.isEmpty());
-        
-        
         
         do {
             serial = JOptionPane.showInputDialog("Ingrese el serial:");
@@ -148,5 +141,8 @@ public class Registrar_Est_diseno {
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nAsignaturas cursadas: " + cantidadasig + "\nModalidad: " + modalidad +
                 "\nSerial: " + serial+ "\nMarca: " + marca+ "\nTamaño: " + tamano+ "\nPrecio: " + precio+ "\nAlmacenamiento: " + almacenamiento+"\nPeso: " + peso );
+
+        Salir s=new Salir();
+        s.Menu_Salir();
     }
 }

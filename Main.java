@@ -11,5 +11,4 @@ public class Main{
         me.switches_est(op);
         
     }
-
 }

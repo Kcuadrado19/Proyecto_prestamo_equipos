@@ -11,7 +11,7 @@ public class Menu_opciones {
         UIManager.put("Panel.background", Color.LIGHT_GRAY);
 
         // Opciones que se mostrarán en el JComboBox
-        String[] opciones = {"Estudiante de Ingeniería", "Estudiante de Diseño", "Mostrar Inventario Total","Salir"};
+        String[] opciones = {"Estudiante de Ingeniería", "Estudiante de Diseño", "Mostrar Inventario Total"};
 
         // Mensaje que se mostrará en el cuadro de diálogo
         JComboBox<String> comboBox = new JComboBox<>(opciones);
@@ -49,8 +49,11 @@ public class Menu_opciones {
             opcionSeleccionada = (String) comboBox.getSelectedItem();
             System.out.println("Opción seleccionada: " + opcionSeleccionada);
         } else {
+            JOptionPane.showMessageDialog(null, "Saliendo del programa...");
             System.out.println("El usuario cerró el cuadro de diálogo sin seleccionar ninguna opción.");
         }
+
         return opcionSeleccionada;
+        
     }
 }

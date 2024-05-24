@@ -26,8 +26,6 @@ public class Submenu_Est_Ingenieria {
                             JOptionPane.showMessageDialog(null, "Opción no válida");
                             break; }
                 }
-                Salir s=new Salir();
-                s.Menu_Salir();
                 break;
 
             case "Modificar préstamo de equipo":

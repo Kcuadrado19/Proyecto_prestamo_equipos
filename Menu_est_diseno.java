@@ -52,5 +52,6 @@ public class Menu_est_diseno {
             System.out.println("El usuario cerró el cuadro de diálogo sin seleccionar ninguna opción.");
         }
         return opcionSeleccionada;
+        
     }
 }

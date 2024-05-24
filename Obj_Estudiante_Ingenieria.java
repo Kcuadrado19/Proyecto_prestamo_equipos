@@ -14,7 +14,6 @@ public class Obj_Estudiante_Ingenieria {
         this.apellido = apellido;
         this.telefono = telefono;
         this.semestreActual = semestreActual;
-        
     }
 
     //Metodos Getter and Setter
@@ -65,6 +64,5 @@ public class Obj_Estudiante_Ingenieria {
     public void setPromedioAcumulado(double promedioAcumulado) {
         this.promedioAcumulado = promedioAcumulado;
     }
-
     
 }
