@@ -1,0 +1,13 @@
+Cedula,Nombre,Apellido,Telefono,Modalidad de Estudio,Cantidad de Asignaturas,Serial,Marca,Tamaño,Precio,Almacenamiento,Peso
+1234567890,Juan,Perez,1234567890,Presencial,5,ABC123,Samsung,15.6,699.99,512 GB,1.2
+0987654321,Maria,Lopez,9876543210,Virtual,4,XYZ456,Apple,13.3,1299.99,256 GB,1.3
+1111111111,Pedro,Gomez,1111111111,Presencial,6,DEF789,Dell,14.0,899.99,1 TB,1.5
+2222222222,Luis,Fernandez,2222222222,Presencial,4,GHI012,HP,13.5,799.99,256 GB,1.4
+3333333333,Ana,Martinez,3333333333,Virtual,5,JKL345,Lenovo,12.0,599.99,512 GB,1.1
+4444444444,Daniel,Rodriguez,4444444444,Presencial,7,MNO678,Acer,15.6,999.99,1 TB,1.6
+5555555555,Sofia,Gonzalez,5555555555,Virtual,6,PQR901,Asus,14.0,1099.99,512 GB,1.2
+6666666666,Carolina,Ramirez,6666666666,Presencial,5,STU234,Microsoft,13.5,899.99,256 GB,1.3
+7777777777,Javier,Sanchez,7777777777,Virtual,4,VWX567,Google,12.3,1199.99,1 TB,1.4
+8888888888,Paula,Diaz,8888888888,Presencial,6,YZB890,Razer,14.0,1299.99,512 GB,1.5
+9999999999,Miguel,Torres,9999999999,Virtual,5,ABC111,MSI,15.6,1499.99,256 GB,1.6
+

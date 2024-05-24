@@ -1,0 +1,9 @@
+ cedula,nombre,apellido,telefono,semestreActual,promedioAcumulado,serial,marca,tamano,precio,sistema_operativo,procesador
+1234567890,Juan,Perez,5551234567,3,8.5,ABC123,Samsung,10.1,299.99,Windows 11,Intel® Core™ i5
+2345678901,Maria,Lopez,5552345678,4,9.2,DEF456,Apple,9.7,499.99,Windows 7,Intel® Core™ i5
+3456789012,Carlos,Gomez,5553456789,2,7.8,GHI789,Amazon,8.0,199.99,Windows 10,Intel® Core™ i5
+4567890123,Sofia,Rodriguez,5554567890,5,9.8,JKL012,Lenovo,12.0,699.99,Windows 11,AMD Ryzen
+5678901234,Luis,Hernandez,5555678901,1,6.4,MNO345,Google,7.0,399.99,Windows 7,Intel® Core™ i5
+6789012345,Ana,Martinez,5556789012,3,8.0,PQR678,HP,11.6,599.99,Windows 10,AMD Ryzen
+7890123456,Daniel,Ramirez,5557890123,4,8.9,STU901,Dell,13.3,799.99,Windows 11,AMD Ryzen
+8901234567,Elena,Fernandez,5558901234,2,7.2,VWX012,Acer,15.6,899.99,Windows 11,AMD Ryzen
