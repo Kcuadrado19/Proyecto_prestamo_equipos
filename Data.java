@@ -13,7 +13,6 @@ public class Data {
         for (Obj_Import_Ing persona : listaCombinadaInge) {
             System.out.println(persona.getCedula()+" "+persona.getNombre()+" "+persona.getApellido());
         }
-        
         return null;
     }
 
@@ -24,7 +23,6 @@ public class Data {
         for (Obj_Import_dis persona : listaCombinadaDis) {
             System.out.println(persona.getCedula()+" "+persona.getNombre()+" "+persona.getApellido());
         }
-
         return null;
     }
 
