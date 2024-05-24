@@ -1,19 +1,27 @@
 public class Obj_Computador_Portatil {
     private String serial;
     private String marca;
-    private double tamaño;
+    private double tamano;
     private double precio;
     private String sistema_operativo;
     private String procesador;
     
     // Constructor
-    public Obj_Computador_Portatil(String serial, String marca, double tamaño, double precio, String sistema_operativo, String procesador) {
+    public Obj_Computador_Portatil(String serial, String marca, double tamano, double precio, String sistema_operativo, String procesador) {
         this.serial = serial;
         this.marca = marca;
-        this.tamaño = tamaño;
+        this.tamano = tamano;
         this.precio = precio;
         this.sistema_operativo = sistema_operativo;
         this.procesador = procesador;
+    }
+
+    public double getTamano() {
+        return tamano;
+    }
+
+    public void setTamano(double tamano) {
+        this.tamano = tamano;
     }
 
     //Metodos Getter and Setter
@@ -34,11 +42,11 @@ public class Obj_Computador_Portatil {
     }
 
     public double getTamaño() {
-        return tamaño;
+        return tamano;
     }
 
     public void setTamaño(double tamaño) {
-        this.tamaño = tamaño;
+        this.tamano = tamaño;
     }
 
     public double getPrecio() {

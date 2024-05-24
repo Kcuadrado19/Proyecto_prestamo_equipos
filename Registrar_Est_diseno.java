@@ -4,9 +4,9 @@ public class Registrar_Est_diseno {
 
 
     public static void ingresarDatos() {
-        String nombre, apellido, cedula, telefono, semestreStr, promedioStr, serial;
+        String nombre, apellido, cedula, telefono, cantidadStr, promedioStr, serial;
         int semestre = 0;
-        float promedio = 0.0f;
+        float promedio = 0.0f, cantidad= 0.0f;
         
         do {
             nombre = JOptionPane.showInputDialog("Ingrese su nombre:");
@@ -39,18 +39,18 @@ public class Registrar_Est_diseno {
         } while (!telefono.matches("[0-9]+") || telefono.length() > 10 || telefono.isEmpty());
         
         do {
-            semestreStr = JOptionPane.showInputDialog("Ingrese el número de semestre actualmente cursado:");
-            if (!semestreStr.matches("[0-9]+")) {
+            cantidadStr = JOptionPane.showInputDialog("Ingrese el número de semestre actualmente cursado:");
+            if (!cantidadStr.matches("[0-9]+")) {
                 JOptionPane.showMessageDialog(null, "El número de semestre solo puede contener números.");
             } else {
-                semestre = Integer.parseInt(semestreStr);
-                if (semestre> 10) {
-                    JOptionPane.showMessageDialog(null, "El semestre no puede ser mayor a 10.");
+                semestre = Integer.parseInt(cantidadStr);
+                if (cantidad> 10) {
+                    JOptionPane.showMessageDialog(null, "no puedes cursar más de 10 asignaturas.");
                 }
             }
-        } while (!semestreStr.matches("[0-9]+") || semestre > 10 || semestreStr.isEmpty());
+        } while (!cantidadStr.matches("[0-9]+") || cantidad > 10 || cantidadStr.isEmpty());
         
-        semestre = Integer.parseInt(semestreStr);
+        semestre = Integer.parseInt(cantidadStr);
         
         do {
             promedioStr = JOptionPane.showInputDialog("Ingrese su promedio acumulado:");
@@ -74,6 +74,10 @@ public class Registrar_Est_diseno {
         } while (!serial.matches("[a-zA-Z0-9]+"));
         
        
+        //Obj_estudiante_diseno etd = new Obj_estudiante_diseno(cedula,nombre,apellido,telefono,semestre,promedio,serial);
+        //Data dtd= new Data();
+        //dtd.datos(etd);
+
         JOptionPane.showMessageDialog(null, "Datos ingresados:\nNombre: " + nombre +
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nSemestre actualmente cursado: " + semestre + "\nPromedio acumulado: " + promedio +

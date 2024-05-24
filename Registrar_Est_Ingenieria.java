@@ -4,10 +4,11 @@ public class Registrar_Est_Ingenieria {
 
 
     public void ingresarDatos() {
-        String nombre, apellido, cedula, telefono, semestreStr, promedioStr, serial, marca, tamanostr, preciostr;
+        String nombre, apellido, cedula, telefono, semestreStr, promedioStr, serial, marca, tamanostr, preciostr,sistemaop, procesador;
         int semestre = 0;
         float promedio = 0.0f, tamano = 0.0f, precio=0.0f;
-            
+        String[] opciones = {"Windows 7", "Windows 10", "Windows 11"};
+        String[] opcionesProcesador = {"AMD Ryzen", "Intel® Core™ i5"};   
         
         do {
             nombre = JOptionPane.showInputDialog("Ingrese su nombre:");
@@ -90,22 +91,66 @@ public class Registrar_Est_Ingenieria {
              tamano = Float.parseFloat(tamanostr);
 
         do {
-            preciostr = JOptionPane.showInputDialog("Ingrese el precio del equipo en pulgadas:");
+            preciostr = JOptionPane.showInputDialog("Ingrese el precio del equipo:");
             if (!preciostr.matches("\\d*\\.?\\d+")) {
-                JOptionPane.showMessageDialog(null, "El tamaño debe ser un número válido.");
+                JOptionPane.showMessageDialog(null, "El precio debe ser un número válido.");
             }
         } while (!preciostr.matches("\\d*\\.?\\d+")|| preciostr.isEmpty());
-             precio = Float.parseFloat(preciostr);    
-    
+             precio = Float.parseFloat(preciostr);  
         
+             int opcionSeleccionadaSistemaOperativo;
+             boolean opcionValidaSistemaOperativo;
+        do {
+                 opcionSeleccionadaSistemaOperativo = JOptionPane.showOptionDialog(null, "Elija el sistema operativo:",
+                         "Seleccionar Sistema Operativo", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null,
+                         opciones, null); // Usamos null como valor predeterminado para que no se seleccione ninguna opción inicialmente
+     
+                 if (opcionSeleccionadaSistemaOperativo == JOptionPane.CLOSED_OPTION) {
+                     // El usuario cerró la ventana,
+                     return;
+                 }
+     
+                 sistemaop = opciones[opcionSeleccionadaSistemaOperativo];
+     
+                 opcionValidaSistemaOperativo = opcionSeleccionadaSistemaOperativo != -1; // Verifica si se ha seleccionado una opción válida
+     
+                 if (!opcionValidaSistemaOperativo) {
+                     JOptionPane.showMessageDialog(null, "Elija una de las opciones disponibles.");
+                 }
+        } while (!opcionValidaSistemaOperativo);
 
-        Obj_Estudiante_Ingenieria eti = new Obj_Estudiante_Ingenieria(cedula,nombre,apellido,telefono,semestre,promedio,serial);
+        int opcionSeleccionadaProcesador;
+        boolean opcionValidaProcesador;
+        do {
+            opcionSeleccionadaProcesador = JOptionPane.showOptionDialog(null, "Elija el procesador del equipo:",
+                    "Seleccionar Procesador", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null,
+                    opcionesProcesador, null); // Usamos null como valor predeterminado para que no se seleccione ninguna opción inicialmente
+
+            if (opcionSeleccionadaProcesador == JOptionPane.CLOSED_OPTION) {
+                 //El usuario cerró la ventana, 
+                return;
+            }
+
+            procesador = opcionesProcesador[opcionSeleccionadaProcesador];
+
+            opcionValidaProcesador = opcionSeleccionadaProcesador != -1; // Verifica si se ha seleccionado una opción válida
+
+            if (!opcionValidaProcesador) {
+                JOptionPane.showMessageDialog(null, "Elija una de las opciones disponibles.");
+            }
+        } while (!opcionValidaProcesador);
+
+        Obj_Estudiante_Ingenieria eti = new Obj_Estudiante_Ingenieria(cedula,nombre,apellido,telefono,semestre,promedio);
+        Obj_Computador_Portatil ocp = new Obj_Computador_Portatil(serial,  marca,  tamano, precio, sistemaop, procesador);
         Data dt= new Data();
-        dt.datos(eti);
+        dt.datos(eti,ocp); 
         
         JOptionPane.showMessageDialog(null, "Datos ingresados:\nNombre: " + nombre +
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nSemestre actualmente cursado: " + semestre + "\nPromedio acumulado: " + promedio +
-                "\nSerial: " + serial);
+                "\nSerial: " + serial + "\nSistema operativo: " + sistemaop +
+                "\nProcesador: " + procesador);
+
+                
     }
 }
