@@ -52,7 +52,7 @@ public class Registrar_Est_Ingenieria {
             }
         } while (!semestreStr.matches("[0-9]+") || semestre > 10 || semestreStr.isEmpty());
         
-        semestre = Integer.parseInt(semestreStr);
+        
         
         do {
             promedioStr = JOptionPane.showInputDialog("Ingrese su promedio acumulado:");
@@ -149,7 +149,7 @@ public class Registrar_Est_Ingenieria {
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nSemestre actualmente cursado: " + semestre + "\nPromedio acumulado: " + promedio +
                 "\nSerial: " + serial + "\nSistema operativo: " + sistemaop +
-                "\nProcesador: " + procesador);
+                "\nProcesador: " + procesador+ "\nMarca: " + marca+"\ntamaño: " + tamano+"\nPrecio: " + precio);
 
                 
     }

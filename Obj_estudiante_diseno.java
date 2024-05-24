@@ -5,20 +5,21 @@ public class Obj_estudiante_diseno {
     private String telefono;
     private String modalidadEstudio;
     private int cantidadAsignaturas;
-    private int serial;
+    
 
     //Constructor
-    public Obj_estudiante_diseno(String cedula, String nombre, String apellido, String telefono, String modalidadEstudio, int cantidadAsignaturas, int serial) {
+    public Obj_estudiante_diseno(String cedula, String nombre, String apellido, String telefono, String modalidadEstudio, int cantidadAsignaturas) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.modalidadEstudio = modalidadEstudio;
         this.cantidadAsignaturas = cantidadAsignaturas;
-        this.serial = serial;
+        
     }
 
-    //Getter and setter vacios
+    //Getter and setter 
+
     public String getCedula() {
         return cedula;
     }
@@ -67,12 +68,7 @@ public class Obj_estudiante_diseno {
         this.cantidadAsignaturas = cantidadAsignaturas;
     }
 
-    public int getSerial() {
-        return serial;
-    }
-
-    public void setSerial(int serial) {
-        this.serial = serial;
-    }
+    
+   
     
 }
