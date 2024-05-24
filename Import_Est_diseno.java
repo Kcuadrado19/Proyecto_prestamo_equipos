@@ -8,9 +8,10 @@ public class Import_Est_diseno {
     public void Import_diseno() {
 
         LinkedList<Obj_Import_dis> import_dis = new LinkedList<>();
-        File file = new File("C:/Users/Jesus Suarez/OneDrive - onbusinessconsulting.com/Documentos/Java/Estructura/Prueba Import/DB_Estudiante_Diseno.txt"); // Cambia la ruta al archivo
+        // Obtener la ruta relativa del archivo
+        String filePath = "DB_Estudiante_Diseno.txt"; // Cambia el nombre del archivo si es diferente
 
-        try (Scanner scanner = new Scanner(file)) {
+        try (Scanner scanner = new Scanner(new File(filePath))) {
             // Ignorar la primera línea si contiene encabezados
             if (scanner.hasNextLine()) {
                 scanner.nextLine(); // Saltar la primera línea (encabezados)
