@@ -2,7 +2,6 @@ import javax.swing.JOptionPane;
 
 public class Registrar_Est_Ingenieria {
 
-
     public void ingresarDatos() {
         String nombre, apellido, cedula, telefono, semestreStr, promedioStr, serial, marca, tamanostr, preciostr,sistemaop, procesador;
         int semestre = 0;
@@ -52,8 +51,6 @@ public class Registrar_Est_Ingenieria {
             }
         } while (!semestreStr.matches("[0-9]+") || semestre > 10 || semestreStr.isEmpty());
         
-        
-        
         do {
             promedioStr = JOptionPane.showInputDialog("Ingrese su promedio acumulado:");
             if (!promedioStr.matches("\\d*\\.?\\d+")) {
@@ -66,17 +63,15 @@ public class Registrar_Est_Ingenieria {
             }
         } while (!promedioStr.matches("\\d*\\.?\\d+") || promedio > 5 || promedioStr.isEmpty());
         
-        
-        
         do {
-            serial = JOptionPane.showInputDialog("Ingrese el serial:");
+            serial = JOptionPane.showInputDialog("Ingrese el serial del equipo a prestar:");
             if (!serial.matches("[a-zA-Z0-9]+")) {
                 JOptionPane.showMessageDialog(null, "El serial solo puede contener letras y números.");
             }
         } while (!serial.matches("[a-zA-Z0-9]+"));
 
         do {
-            marca = JOptionPane.showInputDialog("Ingrese su marca:");
+            marca = JOptionPane.showInputDialog("Ingrese la marca del equipo:");
             if (!marca.matches("[a-zA-Z]+")) {
                 JOptionPane.showMessageDialog(null, "La marca solo puede contener letras.");
             }
@@ -149,8 +144,9 @@ public class Registrar_Est_Ingenieria {
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +
                 "\nSemestre actualmente cursado: " + semestre + "\nPromedio acumulado: " + promedio +
                 "\nSerial: " + serial + "\nSistema operativo: " + sistemaop +
-                "\nProcesador: " + procesador+ "\nMarca: " + marca+"\ntamaño: " + tamano+"\nPrecio: " + precio);
+                "\nProcesador: " + procesador+ "\nMarca: " + marca+"\nTamaño: " + tamano+"\nPrecio: " + precio);
 
-                
+        Salir s=new Salir();
+        s.Menu_Salir();
     }
 }

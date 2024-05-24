@@ -16,6 +16,7 @@ public class Obj_tableta_grafica {
         this.peso = peso;
     }
 
+    //Getter y setter
     public String getSerial() {
         return serial;
     }
@@ -62,9 +63,5 @@ public class Obj_tableta_grafica {
 
     public void setPeso(float peso) {
         this.peso = peso;
-    }
-
-    //Getter y setter
-    
-    
+    }  
 }

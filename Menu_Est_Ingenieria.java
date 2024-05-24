@@ -11,7 +11,7 @@ public class Menu_Est_Ingenieria {
         UIManager.put("Panel.background", Color.LIGHT_GRAY);
 
         // Opciones que se mostrarán en el JComboBox
-        String[] opciones = {"Registrar préstamo de equipo", "Modificar préstamo de equipo", "Devolución de equipo","Buscar equipo", "Volver al menú principal"};
+        String[] opciones = {"Cargar Datos","Registrar préstamo de equipo", "Modificar préstamo de equipo", "Devolución de equipo","Buscar equipo", "Volver al menú principal"};
 
         // Mensaje que se mostrará en el cuadro de diálogo
         JComboBox<String> comboBox = new JComboBox<>(opciones);
@@ -52,5 +52,6 @@ public class Menu_Est_Ingenieria {
             System.out.println("El usuario cerró el cuadro de diálogo sin seleccionar ninguna opción.");
         }
         return opcionSeleccionada;
+        
     }
 }

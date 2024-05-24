@@ -6,7 +6,6 @@ public class Obj_estudiante_diseno {
     private String modalidadEstudio;
     private int cantidadAsignaturas;
     
-
     //Constructor
     public Obj_estudiante_diseno(String cedula, String nombre, String apellido, String telefono, String modalidadEstudio, int cantidadAsignaturas) {
         this.cedula = cedula;
@@ -14,12 +13,10 @@ public class Obj_estudiante_diseno {
         this.apellido = apellido;
         this.telefono = telefono;
         this.modalidadEstudio = modalidadEstudio;
-        this.cantidadAsignaturas = cantidadAsignaturas;
-        
+        this.cantidadAsignaturas = cantidadAsignaturas; 
     }
 
     //Getter and setter 
-
     public String getCedula() {
         return cedula;
     }
@@ -67,8 +64,5 @@ public class Obj_estudiante_diseno {
     public void setCantidadAsignaturas(int cantidadAsignaturas) {
         this.cantidadAsignaturas = cantidadAsignaturas;
     }
-
-    
-   
     
 }
