@@ -135,7 +135,7 @@ public class Registrar_Est_diseno {
         Obj_estudiante_diseno etd = new Obj_estudiante_diseno(cedula,nombre,apellido,telefono,modalidad,cantidadasig);
         Obj_tableta_grafica btg= new Obj_tableta_grafica(serial, marca, tamano, precio, almacenamiento, peso);
         Data dtd= new Data();
-        dtd.datosd(etd,btg);
+        //dtd.datosd(etd,btg);
 
         JOptionPane.showMessageDialog(null, "Datos ingresados:\nNombre: " + nombre +
                 "\nApellido: " + apellido + "\nCédula: " + cedula + "\nTeléfono: " + telefono +

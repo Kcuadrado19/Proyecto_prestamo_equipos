@@ -3,8 +3,13 @@ import javax.swing.JOptionPane;
 public class Submenu_Est_Ingenieria {
 
     public String switches_est_Ingenieria(String opc){
-    
+
         switch(opc)  {
+            case "Cargar Datos":
+                Import_Est_Ingenieria iei = new Import_Est_Ingenieria();
+                iei.Import_Ingenieria();
+                break;
+
             case "Registrar préstamo de equipo":
                 boolean continuar = true;
                     
@@ -44,7 +49,7 @@ public class Submenu_Est_Ingenieria {
 
             default:
 
-                break;
+                break; 
         }
         return null;
     }

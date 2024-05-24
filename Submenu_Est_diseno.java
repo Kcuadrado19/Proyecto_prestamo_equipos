@@ -5,6 +5,11 @@ public class Submenu_Est_diseno {
     public String switches_est_diseno(String op1){
     
         switch(op1)  {
+            case "Cargar Datos":
+                Import_Est_Ingenieria iei = new Import_Est_Ingenieria();
+                iei.Import_Ingenieria();
+                break;
+
             case "Registrar préstamo de equipo":
                 boolean continuar = true;
                     
